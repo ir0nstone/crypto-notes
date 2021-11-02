@@ -4,6 +4,7 @@
 
 ## Fundamentals
 
+* [Divisibility, Factors and Euclid's Algorithms](fundamentals/divisibility-factors-and-euclids-algorithms.md)
 * [Modular Arithmetic](fundamentals/modular-arithmetic.md)
 
 ## RSA
