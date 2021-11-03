@@ -11,6 +11,12 @@
 ## RSA
 
 * [Overview](rsa/overview.md)
-* [Encryption](rsa/encryption.md)
-* [Decryption](rsa/decryption.md)
-* [Untitled](rsa/untitled.md)
+* [Public Exponent Attacks](rsa/public-exponent-attacks/README.md)
+  * [e=1](rsa/public-exponent-attacks/e-1.md)
+  * [Small e](rsa/public-exponent-attacks/small-e.md)
+  * [Multi-party RSA with Small e](rsa/public-exponent-attacks/multi-party-rsa-with-small-e.md)
+* [Choice of Primes](rsa/choice-of-primes/README.md)
+  * [N is prime](rsa/choice-of-primes/n-is-prime.md)
+  * [Mersenne Primes](rsa/choice-of-primes/mersenne-primes.md)
+  * [P=Q](rsa/choice-of-primes/p-q.md)
+  * [Fermat Factorisation](rsa/choice-of-primes/fermat-factorisation.md)

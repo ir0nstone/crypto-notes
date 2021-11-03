@@ -54,6 +54,8 @@ $$
 \phi(n) = n \prod_{p \mid n} (1-\frac{1}{p})
 $$
 
+Note that if $$p$$ is prime, $$\phi (p) = p-1$$.
+
 #### Proof
 
 TODO
