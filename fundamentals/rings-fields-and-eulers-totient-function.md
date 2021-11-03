@@ -61,3 +61,9 @@ TODO
 ### Euler's Formula
 
 Euler's Formula states that if $$gcd(a,p)=1$$ then​
+
+$$
+a^{\phi(n)} \equiv 1 \mod n
+$$
+
+This is perhaps the most important formula for the RSA cryptosystem, which we will get to soon.​
