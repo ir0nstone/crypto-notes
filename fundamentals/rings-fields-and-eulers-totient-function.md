@@ -42,4 +42,22 @@ $$
 
 ​This function has a huge array of applications and further rules which allow us to do some pretty awesome things, and is a key piece of the RSA cryptosystem.
 
-## TODO: Explain more Totient Rules
+### Totient Rules
+
+If $$gcd(p,q)=1$$ then $$\phi(pq)=\phi(p)\phi(q)$$.
+
+### Computing the Euler Totient
+
+If we say that the prime factorisation of $$n$$ is $$n=p_1^{e_1} \cdot p_2^{e_2} \cdot ... \cdot p_k^{e_k}$$ then
+
+$$
+\phi(n) = n \prod_{p \mid n} (1-\frac{1}{p})
+$$
+
+#### Proof
+
+TODO
+
+### Euler's Formula
+
+Euler's Formula states that if $$gcd(a,p)=1$$ then​
