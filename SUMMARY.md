@@ -8,6 +8,10 @@
 * [Modular Arithmetic](fundamentals/modular-arithmetic.md)
 * [Rings, Fields and Euler's Totient Function](fundamentals/rings-fields-and-eulers-totient-function.md)
 
+## Further Maths
+
+* [Continued Fractions](further-maths/continued-fractions.md)
+
 ## RSA
 
 * [Overview](rsa/overview.md)
@@ -15,6 +19,7 @@
   * [e=1](rsa/public-exponent-attacks/e-1.md)
   * [Small e](rsa/public-exponent-attacks/small-e.md)
   * [Multi-party RSA with Small e](rsa/public-exponent-attacks/multi-party-rsa-with-small-e.md)
+  * [Wiener's Attack](rsa/public-exponent-attacks/wieners-attack.md)
 * [Choice of Primes](rsa/choice-of-primes/README.md)
   * [N is prime](rsa/choice-of-primes/n-is-prime.md)
   * [Mersenne Primes](rsa/choice-of-primes/mersenne-primes.md)
