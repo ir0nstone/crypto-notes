@@ -25,3 +25,9 @@
   * [Mersenne Primes](rsa/choice-of-primes/mersenne-primes.md)
   * [P=Q](rsa/choice-of-primes/p-q.md)
   * [Fermat Factorisation](rsa/choice-of-primes/fermat-factorisation.md)
+
+## Diffie-Hellman Key Exchange <a href="dhke" id="dhke"></a>
+
+* [Overview](dhke/overview.md)
+* [Solving the DLP](dhke/solving-the-dlp/README.md)
+  * [Baby Step, Giant Step](dhke/solving-the-dlp/baby-step-giant-step.md)
