@@ -25,6 +25,8 @@
   * [Mersenne Primes](rsa/choice-of-primes/mersenne-primes.md)
   * [P=Q](rsa/choice-of-primes/p-q.md)
   * [Fermat Factorisation](rsa/choice-of-primes/fermat-factorisation.md)
+* [Factorisation Methods](rsa/factorisation-methods/README.md)
+  * [Pollard's p-1](rsa/factorisation-methods/pollards-p-1.md)
 
 ## Diffie-Hellman Key Exchange <a href="dhke" id="dhke"></a>
 
