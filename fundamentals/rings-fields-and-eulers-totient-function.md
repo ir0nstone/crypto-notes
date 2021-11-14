@@ -68,4 +68,21 @@ $$
 a^{\phi(n)} \equiv 1 \mod n
 $$
 
-This is perhaps the most important formula for the RSA cryptosystem, which we will get to soon.​
+This is perhaps the most important formula for the RSA cryptosystem, which we will get to soon.​ Note that this actually tells us a little more in the case modulo a prime $$p$$, a case named after Fermat.
+
+### Fermat's Little Theorem
+
+Since $$\phi(p)=p-1$$​, Fermat's Little Theorem states that:
+
+$$
+a^{p-1} \equiv 1 \mod p
+$$
+
+This was stated by Fermat over 100 years before Euler's Formula. You may note that this also gives us a quick way to compute the **modular multiplicative inverse** of $$a$$ in $$\mathbb{F}_p$$:
+
+$$
+a^{p-1} \equiv 1 \mod p \\
+a^{p-1} \cdot a^{-1} \equiv 1 \cdot a^{-1} \mod p \\
+a^{p-2} \equiv a^{-1} \mod p
+$$
+
