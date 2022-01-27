@@ -46,7 +46,7 @@ One of the obvious applications of these convergents is as **rational approximat
 
 * As a sequence, they have a limit
   * This limit is $$\alpha_1$$, the real number you are attempting to approximate
-* They are alternately greater than and less than $$\alpha_1$$\\
+* They are alternately greater than and less than $$\alpha_1$$
 
 ## Sage
 

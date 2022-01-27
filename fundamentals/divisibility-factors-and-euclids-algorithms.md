@@ -8,7 +8,7 @@ Cryptography is built on the foundations of algebra and number theory, which we 
 
 ## Divisibility
 
-$$a$$ is said to be divisible by $$b$$ if there is another integer $$c$$ such that $$a=bc$$. In this case, $$b$$ is said to be a **factor** of $$c$$. This is denoted by $$a \mid b$$ if $$a$$ divides $$b$$, and $$a \nmid b$$ if it does not.
+$$a$$ is said to be divisible by $$b$$ if there is another integer $$c$$ such that $$a=bc$$. In this case, $$b$$ is said to be a **factor** of $$a$$. This is denoted by $$a \mid b$$ if $$a$$ divides $$b$$, and $$a \nmid b$$ if it does not.
 
 ## Greatest Common Divisor
 
@@ -49,12 +49,56 @@ And so on. But when does it stop? When do we stop taking the GCD? Well we can st
 I highly recommend you think about this for a bit until it makes sense to you, and make sure to use other resources if it helps!
 {% endhint %}
 
+#### Example
+
+Let’s say we want to find the GCD of 8075 and 16283. First, we can write it in the form $$a= b \cdot q+r$$:
+
+$$
+16283 = 8075·2 + 133
+$$
+
+And now we attempt to calculate the GCD of 8075 and 133.
+
+$$
+8075 = 133 \cdot 60 + 95 \\
+    133 = 95 \cdot 1 + 38 \\
+    95 = 38 \cdot 2 + 19 \\
+    38 = 19 \cdot 2 + 0
+$$
+
+Therefore the GCD of 16283 and 8075 is 19.
+
 ### Extended Euclidean Algorithm
 
-We can take the Euclidean Algorithm one step further and calculate, in addition to the GCD, two integer coefficients $$u,v$$ for $$a,b$$ which sum to the GCD, i.e.
+We can take the Euclidean Algorithm a step further and calculate, in addition to the GCD, $$u,v \in \mathbb{Z}$$ for $$a,b$$ which sum to the GCD, i.e.
 
 $$
 au + bv = gcd(a,b)
 $$
 
-This is especially useful for calculating [**modular inverses**](modular-arithmetic.md#modular-multiplicative-inverses) of numbers. Explanations of this algorithm can be found [everywhere online](https://brilliant.org/wiki/extended-euclidean-algorithm/) (read: I can't be bothered to write an explanation out) but essentially you use the last line of the working for the Euclidean Algorithm to calculate $$r_n$$ then substitute that back in repeatedly.
+This extension of the algorithm is invaluable for calculating **modular inverses** of numbers and is based on using the Euclidean Algorithm to calculate the GCD then writing it in terms of other numbers, repeating the process for the smallest non-GCD number until we reach an equation with only the GCD and the two starting numbers. Let's work with the example above, writing an equation for the GCD:
+
+$$
+19 = 95 - 38 \cdot 2
+$$
+
+Now 38 is the smallest non-GCD number, and we can write it in terms of the larger number in the sequence of equations written in the example, then repeat for the next smallest:
+
+$$
+19 = 95 - 38 \cdot 2 \\
+    = 95 - (133 - 95 \cdot 1) \cdot 2 \\
+    = 95 - (133 \cdot 2 + 95 \cdot -2) \\
+    = 95 \cdot 3 + 133 \cdot -2 \\
+    = (8075 + 133 \cdot -60) \cdot 3 + 133 \cdot -2 \\
+    = 8075 \cdot 3 + 133 \cdot -180 + 133 \cdot -2 \\
+    = 8075 \cdot 3 + 133 \cdot -182 \\
+    = 8075 \cdot 3 + (16283 + 8075 \cdot -2) \cdot -182 \\
+    = 8075 \cdot 3 + 16283 \cdot -182 + 8075 \cdot 364 \\
+    = 8075 \cdot 367 + 16283 \cdot -182
+$$
+
+Therefore our equation $$au + bv = gcd(a,b)$$ is as follows:
+
+$$
+16283 \cdot -182 + 8075 \cdot 367 = 19
+$$
