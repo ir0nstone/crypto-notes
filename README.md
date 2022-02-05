@@ -4,4 +4,8 @@ Welcome to my repository of cryptography notes! As I learn new concepts and tech
 
 
 
+If this resource has been helpful to you, please consider [supporting me on buymeacoffee](https://www.buymeacoffee.com/ir0nst0ne) :)
+
+
+
 \~ Andrej Ljubic
