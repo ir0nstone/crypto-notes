@@ -8,6 +8,11 @@
 * [Modular Arithmetic](fundamentals/modular-arithmetic.md)
 * [Rings, Fields and Euler's Totient Function](fundamentals/rings-fields-and-eulers-totient-function.md)
 
+## Group Theory
+
+* [Sets](group-theory/sets.md)
+* [Set Operations](group-theory/set-operations.md)
+
 ## Further Maths
 
 * [Continued Fractions](further-maths/continued-fractions.md)
@@ -28,7 +33,7 @@
 * [Factorisation Methods](rsa/factorisation-methods/README.md)
   * [Pollard's p-1](rsa/factorisation-methods/pollards-p-1.md)
 
-## Diffie-Hellman Key Exchange <a href="dhke" id="dhke"></a>
+## Diffie-Hellman Key Exchange <a href="#dhke" id="dhke"></a>
 
 * [Overview](dhke/overview.md)
 * [Solving the DLP](dhke/solving-the-dlp/README.md)
