@@ -12,6 +12,7 @@
 
 * [Sets](group-theory/sets.md)
 * [Set Operations](group-theory/set-operations.md)
+* [Groups](group-theory/groups.md)
 
 ## Further Maths
 
