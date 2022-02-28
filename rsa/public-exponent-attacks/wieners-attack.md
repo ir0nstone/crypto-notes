@@ -6,7 +6,7 @@ description: Using Continued Fractions to attack large e values
 
 ## Overview
 
-Wiener's Attack utilises the convergents of the continued fraction expansion of $$\frac{k}{d}$$ to attempt to guess the decryption exponent $$d$$ when $$e$$ is large, as $$d$$ is necessarily large as a result.
+Wiener's Attack utilises the convergents of the continued fraction expansion of $$\frac{k}{d}$$ to attempt to guess the decryption exponent $$d$$ when $$e$$ is large, as $$d$$ is necessarily small as a result.
 
 ## Introduction
 
@@ -18,7 +18,7 @@ $$
 \approx N
 $$
 
-​We can also say that since $$ed \equiv 1 \mod \phi(N)$$​: we can rearrange this to say that $$ed = k\phi(N) + 1$$.
+​We can also say that since $$ed \equiv 1 \mod \phi(N)$$​, we can rearrange this to say that $$ed = k\phi(N) + 1$$.
 
 $$
 d = k\phi(N) + 1 \\
@@ -26,7 +26,7 @@ ed - k\phi(N) = 1 \\
 \frac{e}{\phi(N)} - \frac{k}{d} = \frac{1}{d\phi(N)}
 $$
 
-Now since $$d\phi(N)$$ is likely to be huge, we can say it's almost zero, and also use the approximation from before to say that
+Now since $$d\phi(N)$$ is likely to be huge, we can say $$\frac{1}{d\phi(N)}$$ is almost zero, and also use the approximation from before to say that
 
 $$
 \frac{e}{N} \approx \frac{k}{d}
@@ -36,7 +36,7 @@ Note that $$\frac{e}{N}$$ is composed of **entirely public information**, meanin
 
 ## Determining the Private Information
 
-We can represent $$\frac{e}{N}$$ as a continued fraction. If we go through the convergents of this fraction, we may come across $$\frac{k}{d}$$ since $$\frac{e}{N} \approx \frac{k}{d}$$. This is more likely to work when $$d$$ is smaller, otherwise we will have to go through far too many convergents for this attack to be feasible, which is why this attack is in use when $$e$$ is huge - when $$e < \frac{1}{3}N^{\frac{1}{4}}$$, to be exact (this boundary has not been thoroughly proven).
+We can represent $$\frac{e}{N}$$ as a continued fraction. If we go through the convergents of this fraction, we may come across $$\frac{k}{d}$$ since $$\frac{e}{N} \approx \frac{k}{d}$$ ($$\frac{k}{d}$$ is a good approximation). This is more likely to work whendis smaller due to **Legendre’s Theorem in Diophantine Approximations** (TODO prove this), specifically when $$d<\frac{1}{3}N^\frac{1}{4}$$.
 
 Once we list the convergents, we iterate through and there are a few checks we can make to determine whether or not it's the correct convergent:
 
@@ -58,9 +58,9 @@ $$
 If we now consider a quadratic equation $$(x-p)(x-q) = 0$$, with the roots $$p$$ and $$q$$ being the prime factors of $$N$$, we can expand this and substitute:
 
 $$
-(x+p)(x-q) = 0 \\
-x^2 - (p+q)x - pq = 0 \\
-x^2 - (N - \phi(N) + 1)x - N = 0
+(x-p)(x-q) = 0 \\
+x^2 - (p+q)x + pq = 0 \\
+x^2 - (N - \phi(N) + 1)x + N = 0
 $$
 
 If our value of $$\phi(N)$$ is correct, we can substitute this into the equation and solve it for two integer values $$p$$ and $$q$$. If the values are not integer, the result can be discarded.
