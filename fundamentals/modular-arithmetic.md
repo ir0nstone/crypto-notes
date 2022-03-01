@@ -32,7 +32,7 @@ As a result, if there is an inverse of $$a$$ modulo $$m$$, such an inverse can o
 
 ### An Intuitive Approach
 
-If you're struggling to visualise this proof, think back to the previous example of $$2$$ having no inverse modulo $$6$$. Why is this? Well, regardless of how much you multiply $$2$$ with, the fact that it's a **factor **of $$6$$ shows that the only possible values $$2a \mod 6$$ can hold are $${0,2,4}$$.
+If you're struggling to visualise this proof, think back to the previous example of $$2$$ having no inverse modulo $$6$$. Why is this? Well, regardless of how much you multiply $$2$$ with, the fact that it's a **factor** of $$6$$ shows that the only possible values $$2a \mod 6$$ can hold are $${0,2,4}$$.
 
 If we instead choose $$4$$ rather than $$2$$, the same principle holds - if there is a common factor (as there is of $$2$$ in this case) there is no value $$x$$ for which $$4x$$ will return $$1$$ modulo $$m$$. I suggest you think about this more if you're uncertain, as it is a fact of great importantance in cryptography.
 
