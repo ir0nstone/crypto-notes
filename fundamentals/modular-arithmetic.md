@@ -32,9 +32,11 @@ As a result, if there is an inverse of $$a$$ modulo $$m$$, such an inverse can o
 
 ### An Intuitive Approach
 
-If you're struggling to visualise this proof, think back to the previous example of $$2$$ having no inverse modulo $$6$$. Why is this? Well, regardless of how much you multiply $$2$$ with, the fact that it's a **factor** of $$6$$ shows that the only possible values $$2a \mod 6$$ can hold are $${0,2,4}$$.
+If you're struggling to visualise this proof, think back to the previous example of $$2$$ having no inverse modulo $$6$$. Why is this? Well, regardless of how much you multiply $$2$$ with, the sequence will go $$0, 2, 4, 0, 2, 4, ...$$ and loop around _because_ it is a factor of 6.
 
-If we instead choose $$4$$ rather than $$2$$, the same principle holds - if there is a common factor (as there is of $$2$$ in this case) there is no value $$x$$ for which $$4x$$ will return $$1$$ modulo $$m$$. I suggest you think about this more if you're uncertain, as it is a fact of great importantance in cryptography.
+Actually, the fact that a number it is not **coprime** with the modulus shows that it can never have an inverse. Again, why? Think about it this way: if they have a common factor, the remainder when one is divided by the other will also have that factor - and therefore not be $$1$$. If we choose $$4$$ rather than $$2$$, we can see this - if there is a common factor (as there is of $$2$$ in this case) there is no value $$x$$ for which $$4x$$ will return $$1$$ modulo $$6$$. Any number you can multiply $$4$$ by will always give a remainder divisible by $$2$$ when divided by 6.
+
+I suggest you spend some time reflecting on this fact, as it is a very important result.
 
 ### Uses
 
