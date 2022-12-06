@@ -26,7 +26,7 @@ You can think of the group of units modulo $$12$$ as essentially a set containin
 
 ## Fields
 
-If every number in $$\mathbb{Z}/m\mathbb{Z}$$ has a modular inverse, it is promoted from a **field** to a **ring** (a field is a ring in which division is possible). Note that the only values of $$m$$ where this are possible are values which are prime, which is why these fields are usually denoted $$\mathbb{F}_p$$. A **finite field** (also called a **Galois field**) is a field with a finite number of elements, such as those used in modular arithmetic. As a result, the term finite field will come up quite often to describe $$\mathbb{F}_p$$.
+If every number in $$\mathbb{Z}/m\mathbb{Z}$$ has a modular inverse, it is promoted from a **ring** to a **field** (a field is a ring in which division is possible). Note that the only values of $$m$$ where this are possible are values which are prime, which is why these fields are usually denoted $$\mathbb{F}_p$$. A **finite field** (also called a **Galois field**) is a field with a finite number of elements, such as those used in modular arithmetic. As a result, the term finite field will come up quite often to describe $$\mathbb{F}_p$$.
 
 ### Relevant Sets of Numbers
 
