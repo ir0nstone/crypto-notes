@@ -2,7 +2,7 @@
 
 ## Encryption
 
-**Alice** first generates primes $$p$$ and $$q$$ and $$N$$ such that $$N=pq$$. This is half of the public key, with the other half being the **public exponent** $$e$$, which should be **coprime** to $$\phi (N)$$ (meaning $$gcd(\phi (N), e) = 1$$). These two values are then made public.
+**Alice **first generates primes $$p$$ and $$q$$ and $$N$$ such that $$N=pq$$. This is half of the public key, with the other half being the **public exponent** $$e$$, which should be **coprime** to $$\phi (N)$$ (meaning $$gcd(\phi (N), e) = 1$$). These two values are then made public.
 
 If **Bob** wants to send a message $$M$$ to Alice using RSA, he calculates:
 

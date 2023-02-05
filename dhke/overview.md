@@ -26,9 +26,9 @@ This means that once they do this, they are in possession of the same number, wh
 The safety of the Diffie-Hellman Key Exchange is grounded on he difficulty of solving the discrete logarithm problem - the difficulty of computing $$x$$ given
 
 $$
-g^x = a \mod p
+g^x \equiv a \mod p
 $$
 
-You can see this in Overview presented above - the values $$g^a \mod p$$ and $$g^b \mod p$$ are sent over a public channel, but because we cannot solve the DLP effectively an attacker is unable to retrieve $$a$$ or $$b$$. We say that the DLP is DHKE's **trapdoor function**.
+You can see this in Overview presented above - the values $$g^a \mod p$$ and $$g^b \mod p$$ are sent over a public channel, but because we cannot solve the DLP efficiently an attacker is unable to retrieve $$a$$ or $$b$$. We say that the DLP is DHKE's **trapdoor function**.
 
 As you may expect from here, many attacks on Diffie-Hellman rely on situations in which you **can** efficiently compute the discrete logarithm.
