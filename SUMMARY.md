@@ -13,6 +13,7 @@
 * [Sets](group-theory/sets.md)
 * [Set Operations](group-theory/set-operations.md)
 * [Groups](group-theory/groups.md)
+* [Homomorphisms](group-theory/homomorphisms.md)
 
 ## Further Maths
 
