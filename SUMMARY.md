@@ -8,13 +8,6 @@
 * [Modular Arithmetic](fundamentals/modular-arithmetic.md)
 * [Rings, Fields and Euler's Totient Function](fundamentals/rings-fields-and-eulers-totient-function.md)
 
-## Group Theory
-
-* [Sets](group-theory/sets.md)
-* [Set Operations](group-theory/set-operations.md)
-* [Groups](group-theory/groups.md)
-* [Homomorphisms](group-theory/homomorphisms.md)
-
 ## Further Maths
 
 * [Continued Fractions](further-maths/continued-fractions.md)
